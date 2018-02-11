@@ -1,0 +1,50 @@
+.Dropdown {
+  border-radius: 35px;
+  border: 2px solid #ffffff;
+  width: 400px;
+  position: relative;
+}
+
+.Dropdown__value {
+  font-size: 24px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 20px;
+  position: relative;
+}
+
+.Dropdown__value:after {
+  content: url('./arrow-select.png');
+  position: absolute;
+  right: 30px;
+}
+.Dropdown__list {
+  position: absolute;
+  top: 73px;
+  border: 2px solid #ffffff;
+  background-color: #cccccc;
+  border-top: none;
+  border-radius: 0 0 35px 35px;
+  width: 200px;
+  margin: auto;
+  list-style: none;
+  color: #ffffff;
+  padding: 10px 30px;
+  font-size: 18px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.Dropdown__list li {
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .Dropdown {
+    margin-bottom: 15px;
+    width: 320px;
+  }
+}

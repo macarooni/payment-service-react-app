@@ -1,0 +1,35 @@
+.InputNum__button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-color: transparent;
+  border: none;
+  background-position: center;
+  background-size: 30px;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+  outline: none;
+}
+
+.InputNum__button:hover {
+  opacity: 0.6;
+}
+
+.InputNum__button--decrease {
+  background-image: url('./button-minus.png');
+  right: 100px;
+}
+
+.InputNum__button--increase {
+  background-image: url('./button-plus.png');
+  right: 60px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .InputNum__button {
+    display: none;
+  }
+}

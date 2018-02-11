@@ -1,0 +1,26 @@
+.Location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.Location__arrow {
+  content: url('./arrow-round-way.png');
+  padding: 0 15px;
+  align-self: self-start;
+  display: block;
+  width: 58px;
+  height: 20px;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1024px) {
+  .Location {
+    display: block;
+  }
+  .Location__arrow {
+    display: none;
+  }
+}

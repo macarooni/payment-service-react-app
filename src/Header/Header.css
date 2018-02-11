@@ -1,0 +1,55 @@
+.Header {
+  height: 100px;
+  grid-area: header;
+  min-height: 80px;
+  box-shadow: 0 0 10px -5px #cccccc;
+  padding: 0 15px;
+
+}
+
+.Header__wrap {
+  width: 920px;
+  margin: auto;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.header__logo {
+  font-size: 50px;
+  color: #ffffff;
+}
+.Header__logo-title--bold{
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.header__menu--buttons{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+.header__menu--buttons.active {
+  font-weight: 900;
+  border-bottom: 1px solid #ffffff;
+}
+
+.menu__img{
+  margin-right: 250px;
+  width: 30px;
+  height: 30px;
+  border: inherit;
+  background-size: cover;
+  background-image: url('./menu.png')
+}
+
+@media screen and (max-width: 1024px) {
+  .header__menu {
+    display: none;
+  }
+  .Header__wrap {
+    width: auto;
+  }
+}

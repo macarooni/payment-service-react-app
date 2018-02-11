@@ -1,0 +1,6 @@
+.Main {
+  min-height: calc(100vh - 100px);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}

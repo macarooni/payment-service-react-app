@@ -1,0 +1,10 @@
+.Button--print {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Button--print:after {
+  display: block;
+  content: url('./print.png');
+}
